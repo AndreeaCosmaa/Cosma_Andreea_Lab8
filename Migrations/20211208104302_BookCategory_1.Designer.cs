@@ -4,14 +4,16 @@ using Cosma_Andreea_Lab8.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Cosma_Andreea_Lab8.Migrations
 {
     [DbContext(typeof(Cosma_Andreea_Lab8Context))]
-    partial class Cosma_Andreea_Lab8ContextModelSnapshot : ModelSnapshot
+    [Migration("20211208104302_BookCategory_1")]
+    partial class BookCategory_1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
